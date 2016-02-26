@@ -1,23 +1,25 @@
 #include <iostream>
-
+using namespace std;
 // GLEW
-#define GLEW_STATIC
-#include <GL/glew.h>
+//#define GLEW_STATIC
+//#include <GL/glew.h>
+
+#include <glad/glad.h>
+
 
 // GLFW
 #include <GLFW/glfw3.h>
-
-
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
 // Window dimensions
-const GLuint WIDTH = 800, HEIGHT = 600;
+const GLuint WIDTH = 800, HEIGHT = 800;
 
 // The MAIN function, from here we start the application and run the game loop
 int main()
 {
-    std::cout << "Starting GLFW context, OpenGL 3.3" << std::endl;
+//    std::cout << "Starting GLFW context, OpenGL 3.3" << std::endl;
+    cout << "Starting GLFW context, OpenGL 3.3" << endl;
     // Init GLFW
     glfwInit();
     // Set all the required options for GLFW
@@ -26,7 +28,7 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
     
-    // see note 1
+    // osx specific
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     
 
@@ -34,7 +36,7 @@ int main()
     GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "LearnOpenGL", nullptr, nullptr);
     if (window == nullptr)
     {
-        std::cout << "Failed to create GLFW window" << std::endl;
+        cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
         return -1;
     }
@@ -43,11 +45,13 @@ int main()
     glfwSetKeyCallback(window, key_callback);
     
     // Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
-    glewExperimental = GL_TRUE;
+    //glewExperimental = GL_TRUE;
     // Initialize GLEW to setup the OpenGL Function pointers
-    if (glewInit() != GLEW_OK)
+    //if (glewInit() != GLEW_OK)
+    
+    if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
     {
-        std::cout << "Failed to initialize GLEW" << std::endl;
+        cout << "Failed to initialize GLEW" << endl;
         return -1;
     }
     
@@ -62,7 +66,7 @@ int main()
         
         // Render
         // Clear the colorbuffer
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        //glClearColor(1.0f, 1.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         
         // Swap the screen buffers
@@ -78,6 +82,33 @@ int main()
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
     std::cout << key << std::endl;
-    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, GL_TRUE);
+    /*if (action == GLFW_PRESS){
+        if (key == GLFW_KEY_G) {
+            glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
+        }
+        else if (key == GLFW_KEY_B){
+            glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
+        }
+        else if (key == GLFW_KEY_ESCAPE){
+            glfwSetWindowShouldClose(window, GL_TRUE);
+        }
+        else{
+            glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        }
+    }*/
+    
+    switch (key) {
+        case GLFW_KEY_C:
+            glClearColor(0.0f, 1.0f, 1.0f, 1.0f);
+            break;
+        case GLFW_KEY_R:
+            glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+            break;
+        case GLFW_KEY_ESCAPE:
+            glfwSetWindowShouldClose(window, GL_TRUE);
+            break;
+        default:
+            break;
+    }
+    
 }
