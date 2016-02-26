@@ -7,7 +7,7 @@ using namespace std;
 #include <glad/glad.h>
 
 
-// GLFW
+// GLFW test
 #include <GLFW/glfw3.h>
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
