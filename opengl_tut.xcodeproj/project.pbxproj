@@ -11,6 +11,7 @@
 		3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7151CE1C7E891E006E7E1F /* ex1.cpp */; };
 		3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
+		3AF3E7C11C802C030024C238 /* fs.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF3E7C01C802C030024C238 /* fs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		3A7151CE1C7E891E006E7E1F /* ex1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ex1.cpp; sourceTree = "<group>"; };
 		3A7152111C7F7549006E7E1F /* libglad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglad.a; path = ../../../../usr/local/lib/libglad.a; sourceTree = DEVELOPER_DIR; };
 		3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = DEVELOPER_DIR; };
+		3AF3E7BF1C802C030024C238 /* fs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fs.h; sourceTree = "<group>"; };
+		3AF3E7C01C802C030024C238 /* fs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 		3A7151991C7E7A5B006E7E1F = {
 			isa = PBXGroup;
 			children = (
+				3AF3E7BF1C802C030024C238 /* fs.h */,
+				3AF3E7C01C802C030024C238 /* fs.m */,
 				3A7152111C7F7549006E7E1F /* libglad.a */,
 				3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */,
 				3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */,
@@ -130,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF3E7C11C802C030024C238 /* fs.m in Sources */,
 				3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
