@@ -9,7 +9,6 @@
 //
 
 #import "fs.h"
-
 @implementation fs
 
 @end
