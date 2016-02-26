@@ -30,8 +30,8 @@
 		3A7151A21C7E7A5B006E7E1F /* opengl_tut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl_tut; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3A7151CE1C7E891E006E7E1F /* ex1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ex1.cpp; sourceTree = "<group>"; };
-		3A7152111C7F7549006E7E1F /* libglad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglad.a; path = ../../../../../../usr/local/lib/libglad.a; sourceTree = "<group>"; };
-		3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
+		3A7152111C7F7549006E7E1F /* libglad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglad.a; path = ../../../../usr/local/lib/libglad.a; sourceTree = DEVELOPER_DIR; };
+		3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = DEVELOPER_DIR; };
 		3A88B9E51C8011B9002ABA19 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		3A88B9E61C8011B9002ABA19 /* test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
