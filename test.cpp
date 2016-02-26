@@ -7,3 +7,5 @@
 //
 
 #include "test.hpp"
+
+test
