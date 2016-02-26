@@ -222,13 +222,11 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/Cellar/glfw3/3.1.2/include/**",
-					"/usr/local/Cellar/glew/1.12.0/include/**",
 					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw3/3.1.2/lib,
-					/usr/local/Cellar/glew/1.12.0/lib,
 					/usr/local/lib,
 				);
 				PRODUCT_NAME = opengl_tut;
@@ -241,13 +239,11 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/Cellar/glfw3/3.1.2/include/**",
-					"/usr/local/Cellar/glew/1.12.0/include/**",
 					/usr/local/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/glfw3/3.1.2/lib,
-					/usr/local/Cellar/glew/1.12.0/lib,
 					/usr/local/lib,
 				);
 				PRODUCT_NAME = opengl_tut;
