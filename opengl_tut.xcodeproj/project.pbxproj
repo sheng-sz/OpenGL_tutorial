@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A7151AD1C7E7B64006E7E1F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */; };
-		3A7151BD1C7E8484006E7E1F /* libGLEW.1.12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7151BC1C7E8484006E7E1F /* libGLEW.1.12.0.dylib */; };
 		3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7151CE1C7E891E006E7E1F /* ex1.cpp */; };
 		3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		3A7151A21C7E7A5B006E7E1F /* opengl_tut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl_tut; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		3A7151BC1C7E8484006E7E1F /* libGLEW.1.12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.12.0.dylib; path = ../../../../../../usr/local/Cellar/glew/1.12.0/lib/libGLEW.1.12.0.dylib; sourceTree = "<group>"; };
 		3A7151CE1C7E891E006E7E1F /* ex1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ex1.cpp; sourceTree = "<group>"; };
 		3A7152111C7F7549006E7E1F /* libglad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglad.a; path = ../../../../../../usr/local/lib/libglad.a; sourceTree = "<group>"; };
 		3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
@@ -45,7 +43,6 @@
 			files = (
 				3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */,
 				3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */,
-				3A7151BD1C7E8484006E7E1F /* libGLEW.1.12.0.dylib in Frameworks */,
 				3A7151AD1C7E7B64006E7E1F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +56,6 @@
 				3A88B9E41C8011AC002ABA19 /* test */,
 				3A7152111C7F7549006E7E1F /* libglad.a */,
 				3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */,
-				3A7151BC1C7E8484006E7E1F /* libGLEW.1.12.0.dylib */,
 				3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */,
 				3A7151A31C7E7A5B006E7E1F /* Products */,
 				3A7151A41C7E7A5B006E7E1F /* opengl_tut_1 */,
