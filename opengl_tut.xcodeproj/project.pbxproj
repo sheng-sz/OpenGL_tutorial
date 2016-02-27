@@ -11,7 +11,7 @@
 		3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7151CE1C7E891E006E7E1F /* ex1.cpp */; };
 		3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
-		3AF3E7C41C8031B70024C238 /* ex1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7151CE1C7E891E006E7E1F /* ex1.cpp */; };
+		3AE2364D1C816B5A00F0D592 /* triangel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2364C1C816B5A00F0D592 /* triangel.cpp */; };
 		3AF3E7C61C8031B70024C238 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3AF3E7C71C8031B70024C238 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
 		3AF3E7C81C8031B70024C238 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */; };
@@ -44,6 +44,7 @@
 		3A7151CE1C7E891E006E7E1F /* ex1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ex1.cpp; sourceTree = "<group>"; };
 		3A7152111C7F7549006E7E1F /* libglad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglad.a; path = ../../../../usr/local/lib/libglad.a; sourceTree = DEVELOPER_DIR; };
 		3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = DEVELOPER_DIR; };
+		3AE2364C1C816B5A00F0D592 /* triangel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = triangel.cpp; path = opengl_tut_1/triangel.cpp; sourceTree = "<group>"; };
 		3AF3E7CD1C8031B70024C238 /* opengl_tut_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl_tut_2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +75,7 @@
 		3A7151991C7E7A5B006E7E1F = {
 			isa = PBXGroup;
 			children = (
+				3AE2364B1C816B1D00F0D592 /* triangle */,
 				3A7152111C7F7549006E7E1F /* libglad.a */,
 				3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */,
 				3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */,
@@ -97,6 +99,14 @@
 				3A7151CE1C7E891E006E7E1F /* ex1.cpp */,
 			);
 			path = opengl_tut_1;
+			sourceTree = "<group>";
+		};
+		3AE2364B1C816B1D00F0D592 /* triangle */ = {
+			isa = PBXGroup;
+			children = (
+				3AE2364C1C816B5A00F0D592 /* triangel.cpp */,
+			);
+			name = triangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF3E7C41C8031B70024C238 /* ex1.cpp in Sources */,
+				3AE2364D1C816B5A00F0D592 /* triangel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
