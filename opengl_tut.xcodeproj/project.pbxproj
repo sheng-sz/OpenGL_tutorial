@@ -11,7 +11,11 @@
 		3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A7151CE1C7E891E006E7E1F /* ex1.cpp */; };
 		3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
+		3ACCBB451C8564E0004ECEFC /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE7C851C855CB5004E848F /* shader.cpp */; };
 		3AE2364D1C816B5A00F0D592 /* triangel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2364C1C816B5A00F0D592 /* triangel.cpp */; };
+		3AEE7C7D1C855C88004E848F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
+		3AEE7C7E1C855C88004E848F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
+		3AEE7C7F1C855C88004E848F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */; };
 		3AF3E7C61C8031B70024C238 /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3AF3E7C71C8031B70024C238 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
 		3AF3E7C81C8031B70024C238 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */; };
@@ -19,6 +23,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3A7151A01C7E7A5B006E7E1F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3AEE7C801C855C88004E848F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -44,7 +57,13 @@
 		3A7151CE1C7E891E006E7E1F /* ex1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ex1.cpp; sourceTree = "<group>"; };
 		3A7152111C7F7549006E7E1F /* libglad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglad.a; path = ../../../../usr/local/lib/libglad.a; sourceTree = DEVELOPER_DIR; };
 		3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = DEVELOPER_DIR; };
+		3ACCBB461C856563004ECEFC /* shader_class.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = shader_class.cpp; path = opengl_tut_1/shader_class.cpp; sourceTree = "<group>"; };
+		3ACCBB4B1C856C14004ECEFC /* fshader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = fshader.cpp; path = opengl_tut_1/fshader.cpp; sourceTree = "<group>"; };
+		3ACCBB4C1C856C14004ECEFC /* vshader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = vshader.cpp; path = opengl_tut_1/vshader.cpp; sourceTree = "<group>"; };
+		3ACCBB4F1C856D05004ECEFC /* shader_class1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = shader_class1.cpp; path = opengl_tut_1/shader_class1.cpp; sourceTree = "<group>"; };
 		3AE2364C1C816B5A00F0D592 /* triangel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = triangel.cpp; path = opengl_tut_1/triangel.cpp; sourceTree = "<group>"; };
+		3AEE7C841C855C88004E848F /* shader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shader; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEE7C851C855CB5004E848F /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = shader.cpp; path = opengl_tut_1/shader.cpp; sourceTree = "<group>"; };
 		3AF3E7CD1C8031B70024C238 /* opengl_tut_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl_tut_2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +75,16 @@
 				3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */,
 				3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */,
 				3A7151AD1C7E7B64006E7E1F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AEE7C7C1C855C88004E848F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEE7C7D1C855C88004E848F /* libglad.a in Frameworks */,
+				3AEE7C7E1C855C88004E848F /* libglfw3.3.1.dylib in Frameworks */,
+				3AEE7C7F1C855C88004E848F /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +104,12 @@
 		3A7151991C7E7A5B006E7E1F = {
 			isa = PBXGroup;
 			children = (
-				3AE2364B1C816B1D00F0D592 /* triangle */,
 				3A7152111C7F7549006E7E1F /* libglad.a */,
 				3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */,
 				3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */,
+				3AEE7C871C855D46004E848F /* Frameworks */,
+				3AEE7C781C855C64004E848F /* shader */,
+				3AE2364B1C816B1D00F0D592 /* triangle */,
 				3A7151A31C7E7A5B006E7E1F /* Products */,
 				3A7151A41C7E7A5B006E7E1F /* opengl_tut_1 */,
 			);
@@ -89,6 +120,7 @@
 			children = (
 				3A7151A21C7E7A5B006E7E1F /* opengl_tut */,
 				3AF3E7CD1C8031B70024C238 /* opengl_tut_2 */,
+				3AEE7C841C855C88004E848F /* shader */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +141,25 @@
 			name = triangle;
 			sourceTree = "<group>";
 		};
+		3AEE7C781C855C64004E848F /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				3ACCBB4F1C856D05004ECEFC /* shader_class1.cpp */,
+				3ACCBB4B1C856C14004ECEFC /* fshader.cpp */,
+				3ACCBB4C1C856C14004ECEFC /* vshader.cpp */,
+				3AEE7C851C855CB5004E848F /* shader.cpp */,
+				3ACCBB461C856563004ECEFC /* shader_class.cpp */,
+			);
+			name = shader;
+			sourceTree = "<group>";
+		};
+		3AEE7C871C855D46004E848F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +178,23 @@
 			name = opengl_tut_1;
 			productName = opengl_tut_1;
 			productReference = 3A7151A21C7E7A5B006E7E1F /* opengl_tut */;
+			productType = "com.apple.product-type.tool";
+		};
+		3AEE7C791C855C88004E848F /* shader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AEE7C811C855C88004E848F /* Build configuration list for PBXNativeTarget "shader" */;
+			buildPhases = (
+				3AEE7C7A1C855C88004E848F /* Sources */,
+				3AEE7C7C1C855C88004E848F /* Frameworks */,
+				3AEE7C801C855C88004E848F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shader;
+			productName = opengl_tut_1;
+			productReference = 3AEE7C841C855C88004E848F /* shader */;
 			productType = "com.apple.product-type.tool";
 		};
 		3AF3E7C21C8031B70024C238 /* opengl_tut_2 */ = {
@@ -174,6 +242,7 @@
 			targets = (
 				3A7151A11C7E7A5B006E7E1F /* opengl_tut_1 */,
 				3AF3E7C21C8031B70024C238 /* opengl_tut_2 */,
+				3AEE7C791C855C88004E848F /* shader */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AEE7C7A1C855C88004E848F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACCBB451C8564E0004ECEFC /* shader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +388,40 @@
 			};
 			name = Release;
 		};
+		3AEE7C821C855C88004E848F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/glfw3/3.1.2/include/**",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					/usr/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AEE7C831C855C88004E848F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/glfw3/3.1.2/include/**",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					/usr/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3AF3E7CB1C8031B70024C238 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -362,6 +473,15 @@
 			buildConfigurations = (
 				3A7151AA1C7E7A5B006E7E1F /* Debug */,
 				3A7151AB1C7E7A5B006E7E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AEE7C811C855C88004E848F /* Build configuration list for PBXNativeTarget "shader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEE7C821C855C88004E848F /* Debug */,
+				3AEE7C831C855C88004E848F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
