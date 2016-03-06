@@ -51,7 +51,7 @@ int main()
     
     if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
     {
-        cout << "Failed to initialize GLEW" << endl;
+        cout << "Failed to initialize GLAD" << endl;
         return -1;
     }
     

@@ -12,6 +12,10 @@
 		3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
 		3ACCBB451C8564E0004ECEFC /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AEE7C851C855CB5004E848F /* shader.cpp */; };
+		3ACCBB581C8633AA004ECEFC /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
+		3ACCBB591C8633AA004ECEFC /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
+		3ACCBB5A1C8633AA004ECEFC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */; };
+		3ACCBB601C8633BA004ECEFC /* stb_img_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ACCBB531C86333D004ECEFC /* stb_img_test.cpp */; };
 		3AE2364D1C816B5A00F0D592 /* triangel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE2364C1C816B5A00F0D592 /* triangel.cpp */; };
 		3AEE7C7D1C855C88004E848F /* libglad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152111C7F7549006E7E1F /* libglad.a */; };
 		3AEE7C7E1C855C88004E848F /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */; };
@@ -23,6 +27,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3A7151A01C7E7A5B006E7E1F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3ACCBB5B1C8633AA004ECEFC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -61,6 +74,8 @@
 		3ACCBB4B1C856C14004ECEFC /* fshader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = fshader.cpp; path = opengl_tut_1/fshader.cpp; sourceTree = "<group>"; };
 		3ACCBB4C1C856C14004ECEFC /* vshader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = vshader.cpp; path = opengl_tut_1/vshader.cpp; sourceTree = "<group>"; };
 		3ACCBB4F1C856D05004ECEFC /* shader_class1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = shader_class1.cpp; path = opengl_tut_1/shader_class1.cpp; sourceTree = "<group>"; };
+		3ACCBB531C86333D004ECEFC /* stb_img_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = stb_img_test.cpp; path = opengl_tut_1/stb_img_test.cpp; sourceTree = "<group>"; };
+		3ACCBB5F1C8633AA004ECEFC /* stb_img */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stb_img; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AE2364C1C816B5A00F0D592 /* triangel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = triangel.cpp; path = opengl_tut_1/triangel.cpp; sourceTree = "<group>"; };
 		3AEE7C841C855C88004E848F /* shader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shader; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AEE7C851C855CB5004E848F /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = shader.cpp; path = opengl_tut_1/shader.cpp; sourceTree = "<group>"; };
@@ -75,6 +90,16 @@
 				3A7152131C7F7549006E7E1F /* libglad.a in Frameworks */,
 				3A7152141C7F7549006E7E1F /* libglfw3.3.1.dylib in Frameworks */,
 				3A7151AD1C7E7B64006E7E1F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ACCBB571C8633AA004ECEFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACCBB581C8633AA004ECEFC /* libglad.a in Frameworks */,
+				3ACCBB591C8633AA004ECEFC /* libglfw3.3.1.dylib in Frameworks */,
+				3ACCBB5A1C8633AA004ECEFC /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +129,7 @@
 		3A7151991C7E7A5B006E7E1F = {
 			isa = PBXGroup;
 			children = (
-				3A7152111C7F7549006E7E1F /* libglad.a */,
-				3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */,
-				3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */,
+				3ACCBB521C863323004ECEFC /* stb_img */,
 				3AEE7C871C855D46004E848F /* Frameworks */,
 				3AEE7C781C855C64004E848F /* shader */,
 				3AE2364B1C816B1D00F0D592 /* triangle */,
@@ -121,6 +144,7 @@
 				3A7151A21C7E7A5B006E7E1F /* opengl_tut */,
 				3AF3E7CD1C8031B70024C238 /* opengl_tut_2 */,
 				3AEE7C841C855C88004E848F /* shader */,
+				3ACCBB5F1C8633AA004ECEFC /* stb_img */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +155,14 @@
 				3A7151CE1C7E891E006E7E1F /* ex1.cpp */,
 			);
 			path = opengl_tut_1;
+			sourceTree = "<group>";
+		};
+		3ACCBB521C863323004ECEFC /* stb_img */ = {
+			isa = PBXGroup;
+			children = (
+				3ACCBB531C86333D004ECEFC /* stb_img_test.cpp */,
+			);
+			name = stb_img;
 			sourceTree = "<group>";
 		};
 		3AE2364B1C816B1D00F0D592 /* triangle */ = {
@@ -156,6 +188,9 @@
 		3AEE7C871C855D46004E848F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A7152111C7F7549006E7E1F /* libglad.a */,
+				3A7152121C7F7549006E7E1F /* libglfw3.3.1.dylib */,
+				3A7151AC1C7E7B64006E7E1F /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +213,23 @@
 			name = opengl_tut_1;
 			productName = opengl_tut_1;
 			productReference = 3A7151A21C7E7A5B006E7E1F /* opengl_tut */;
+			productType = "com.apple.product-type.tool";
+		};
+		3ACCBB541C8633AA004ECEFC /* stb_img */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ACCBB5C1C8633AA004ECEFC /* Build configuration list for PBXNativeTarget "stb_img" */;
+			buildPhases = (
+				3ACCBB551C8633AA004ECEFC /* Sources */,
+				3ACCBB571C8633AA004ECEFC /* Frameworks */,
+				3ACCBB5B1C8633AA004ECEFC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stb_img;
+			productName = opengl_tut_1;
+			productReference = 3ACCBB5F1C8633AA004ECEFC /* stb_img */;
 			productType = "com.apple.product-type.tool";
 		};
 		3AEE7C791C855C88004E848F /* shader */ = {
@@ -243,6 +295,7 @@
 				3A7151A11C7E7A5B006E7E1F /* opengl_tut_1 */,
 				3AF3E7C21C8031B70024C238 /* opengl_tut_2 */,
 				3AEE7C791C855C88004E848F /* shader */,
+				3ACCBB541C8633AA004ECEFC /* stb_img */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7151CF1C7E891E006E7E1F /* ex1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ACCBB551C8633AA004ECEFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACCBB601C8633BA004ECEFC /* stb_img_test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +449,40 @@
 			};
 			name = Release;
 		};
+		3ACCBB5D1C8633AA004ECEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/glfw3/3.1.2/include/**",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					/usr/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3ACCBB5E1C8633AA004ECEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/glfw3/3.1.2/include/**",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					/usr/local/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3AEE7C821C855C88004E848F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,6 +568,15 @@
 			buildConfigurations = (
 				3A7151AA1C7E7A5B006E7E1F /* Debug */,
 				3A7151AB1C7E7A5B006E7E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ACCBB5C1C8633AA004ECEFC /* Build configuration list for PBXNativeTarget "stb_img" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ACCBB5D1C8633AA004ECEFC /* Debug */,
+				3ACCBB5E1C8633AA004ECEFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

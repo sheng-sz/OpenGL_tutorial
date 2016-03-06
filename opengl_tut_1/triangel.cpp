@@ -158,6 +158,8 @@ int main()
         // Check if any events have been activiated (key pressed, mouse moved etc.) and call corresponding response functions
         glfwPollEvents();
         
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        
         // Render
         // Clear the colorbuffer
         //glClearColor(1.0f, 1.0f, 0.0f, 1.0f);

@@ -15,6 +15,8 @@ public:
     // The program ID
     GLuint Program;
     
+    
+    
     // Constructor reads and builds the shader
     Shader(const GLchar* vertexPath, const GLchar* fragmentPath){
         // 1. Retrieve the vertex/fragment source code from filePath
@@ -55,6 +57,7 @@ public:
         // Vertex Shader
         vertex = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertex, 1, &vShaderCode, NULL);
+        
         glCompileShader(vertex);
         // Print compile errors if any
         glGetShaderiv(vertex, GL_COMPILE_STATUS, &success);
